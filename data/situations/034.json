@@ -1,0 +1,31 @@
+{
+  "id": "034",
+  "task": {
+    "id": "doc-3600",
+    "diversity": "low",
+    "workload": "low",
+    "kudos": "low",
+    "urgency": "high",
+    "main_skill": "BPP P3",
+    "complex": false,
+    "format": "extconf"
+  },
+  "team_members": [
+    {
+      "position": 2,
+      "type": "IND"
+    }
+  ],
+  "options": {
+    "first": {
+      "type": "IND",
+      "confidence": 81.25,
+      "explanations": ["Deputy match", "Diversity match", "Other team members match", "Other team members different"]
+    },
+    "second": {
+      "type": "AC",
+      "confidence": 18.75,
+      "explanations": ["Not complex", "Workload match"]
+    }
+  }
+}

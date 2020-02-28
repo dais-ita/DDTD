@@ -1,0 +1,37 @@
+{
+  "id": "027N",
+  "task": {
+    "id": "doc-3581",
+    "diversity": "medium",
+    "workload": "low",
+    "kudos": "low",
+    "urgency": "high",
+    "main_skill": "BPP P5",
+    "complex": false,
+    "format": "extconf"
+  },
+  "team_members": [
+    {
+      "position": 2,
+      "type": "IND"
+    },
+    {
+      "position": 3,
+      "type": "AC"
+    },
+    {
+      "position": 4,
+      "type": "AC"
+    }
+  ],
+  "options": {
+    "first": {
+      "type": "AC",
+      "confidence": 50
+    },
+    "second": {
+      "type": "IND",
+      "confidence": 50
+    }
+  }
+}

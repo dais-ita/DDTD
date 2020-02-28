@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/external/bootstrap/bootstrap.min.css')
+    script(src='/external/jquery/jquery.min.js')
+    script(src='/external/popper/popper.min.js')
+    script(src='/external/bootstrap/bootstrap.min.js')
+    script(src='/external/uuid/uuid_v5.js')
+    script(src='/javascripts/general.js')
+
+  body(onload="javascript:init('" + qnum + "')", onbeforeunload="javascript:actionReload();")
+    div(class="container-fluid text-white bg-dark")
+      div(class="row")
+        div(class="col-md-8")
+          div(class="card bg-dark")
+            <!-- USER DETAILS -->
+            div(class="card-body")
+              table(cellpadding="10px")
+                tr
+                  td
+                    div(id="user_name")
+                  td
+                    button(type='button' class='btn' onclick='changeUser()') Change user
+        div(class="col-md-4")
+          div(class="card bg-dark")
+            <!-- QUESTION NUMBER -->
+            if (qnum > 0)
+              div(class="card-body")
+                h2 Question #{qnum} of #{qmax}
+  block content

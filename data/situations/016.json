@@ -1,0 +1,43 @@
+{
+  "id": "016",
+  "task": {
+    "id": "doc-4427",
+    "diversity": "medium",
+    "workload": "medium",
+    "kudos": "low",
+    "urgency": "high",
+    "main_skill": "BPP P3",
+    "complex": false,
+    "format": "intconf"
+  },
+  "team_members": [
+    {
+      "position": 2,
+      "type": "IND"
+    },
+    {
+      "position": 3,
+      "type": "IND"
+    },
+    {
+      "position": 4,
+      "type": "IND"
+    },
+    {
+      "position": 5,
+      "type": "AC"
+    }
+  ],
+  "options": {
+    "first": {
+      "type": "IND",
+      "confidence": 75.0,
+      "explanations": ["Deputy match", "Diversity match", "Other team members match"]
+    },
+    "second": {
+      "type": "AC",
+      "confidence": 25.0,
+      "explanations": ["Not complex", "Other team members match", "Other team members different", "Format match"]
+    }
+  }
+}

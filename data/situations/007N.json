@@ -1,0 +1,41 @@
+{
+  "id": "007N",
+  "task": {
+    "id": "doc-1083",
+    "diversity": "high",
+    "workload": "high",
+    "kudos": "low",
+    "urgency": "low",
+    "main_skill": "IPP P2",
+    "complex": true,
+    "format": "extconf"
+  },
+  "team_members": [
+    {
+      "position": 2,
+      "type": "IND"
+    },
+    {
+      "position": 3,
+      "type": "IND"
+    },
+    {
+      "position": 4,
+      "type": "AC"
+    },
+    {
+      "position": 5,
+      "type": "AC"
+    }
+  ],
+  "options": {
+    "first": {
+      "type": "IND",
+      "confidence": 75.0
+    },
+    "second": {
+      "type": "AC",
+      "confidence": 25.0
+    }
+  }
+}

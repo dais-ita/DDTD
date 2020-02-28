@@ -1,0 +1,39 @@
+{
+  "id": "013",
+  "task": {
+    "id": "doc-2836",
+    "diversity": "low",
+    "workload": "low",
+    "kudos": "medium",
+    "urgency": "medium",
+    "main_skill": "BPP P5",
+    "complex": false,
+    "format": "extconf"
+  },
+  "team_members": [
+    {
+      "position": 2,
+      "type": "AC"
+    },
+    {
+      "position": 3,
+      "type": "AC"
+    },
+    {
+      "position": 4,
+      "type": "AC"
+    }
+  ],
+  "options": {
+    "first": {
+      "type": "AC",
+      "confidence": 81.25,
+      "explanations": ["Deputy match", "Not complex", "Other team members match", "Workload match"]
+    },
+    "second": {
+      "type": "IND",
+      "confidence": 18.75,
+      "explanations": ["Diversity match", "Other team members different", "Skill match: designing"]
+    }
+  }
+}

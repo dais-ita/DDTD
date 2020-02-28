@@ -1,0 +1,43 @@
+{
+  "id": "035",
+  "task": {
+    "id": "doc-4475",
+    "diversity": "high",
+    "workload": "high",
+    "kudos": "low",
+    "urgency": "medium",
+    "main_skill": "BPP P4",
+    "complex": true,
+    "format": "other"
+  },
+  "team_members": [
+    {
+      "position": 2,
+      "type": "AC"
+    },
+    {
+      "position": 3,
+      "type": "AC"
+    },
+    {
+      "position": 4,
+      "type": "AC"
+    },
+    {
+      "position": 5,
+      "type": "IND"
+    }
+  ],
+  "options": {
+    "first": {
+      "type": "AC",
+      "confidence": 93.75,
+      "explanations": ["Deputy match", "Other team members match", "Skill match: writing", "Workload match"]
+    },
+    "second": {
+      "type": "IND",
+      "confidence": 6.25,
+      "explanations": ["Complex", "Diversity match"]
+    }
+  }
+}

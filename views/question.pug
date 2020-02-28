@@ -1,0 +1,155 @@
+extends layout_LOCAL
+
+block content
+  - var teamsize = question.team_members.length
+  div(class="container-fluid text-white bg-dark")
+    div(class="row text-white")
+      div(class="col-md-6")
+        div(class="card bg-dark")
+          <!-- TASK DETAILS -->
+          div(class="card-header")
+            h3 Task details
+          div(class="card-body")
+            p These are the attributes for this task:
+            table("cellpadding=10px")
+              tr
+                td(valign="top", align="center")
+                  img(src="/images/task.png", width="100px")
+                  br
+                  p Task #{qnum}
+                td(valign="top")
+                  table(class="table")
+                    tbody
+                      tr
+                        td diversity&nbsp;&nbsp;
+                          img(src="/images/info.png" width="30px" onclick="javascript:popOver('diversity');" data-toggle="popover" title="Diversity: " + question.task.diversity data-content="This indicates how varied the team members should be.")
+                        td #{question.task.diversity}
+                      tr
+                        td workload
+                          img(src="/images/info.png" width="30px" onclick="javascript:popOver('workload');" data-toggle="popover" title="Workload: " + question.task.workload data-content="This indicates how much effort is needed for this task.")
+                        td #{question.task.workload}
+                      tr
+                        td kudos
+                          img(src="/images/info.png" width="30px" onclick="javascript:popOver('kudos');" data-toggle="popover" title="Kudos: " + question.task.kudos data-content="This indicates how much recognition the team will get for completing this task.")
+                        td #{question.task.kudos}
+                      tr
+                        td urgency
+                          img(src="/images/info.png" width="30px" onclick="javascript:popOver('urgency');" data-toggle="popover" title="Urgency: " + question.task.urgency data-content="This indicates how quickly this task must be completed.")
+                        td #{question.task.urgency}
+                td(valign="top")
+                  table(class="table")
+                    tbody
+                      tr
+                        td complex
+                          img(src="/images/info.png" width="30px" onclick="javascript:popOver('complex');" data-toggle="popover" title="Complex: " + question.task.complex data-content="This indicates whether the task is complex or not.")
+                        td #{question.task.complex}
+                      tr
+                        td skill
+                          img(src="/images/info.png" width="30px" onclick="javascript:popOver('skill');" data-toggle="popover" title="Skill: " + question.task.main_skill data-content="This indicates the main skill required for the team to complete the task.")
+                        td #{question.task.main_skill}
+                      tr
+                        td format
+                          img(src="/images/info.png" width="30px" onclick="javascript:popOver('format');" data-toggle="popover" title="Format: " + question.task.format data-content="This indicates the format in which the task will be reported.")
+                        td #{question.task.format}
+      div(class="col-md-6")
+        div(class="card bg-dark")
+          <!-- OPTIONS -->
+          div(class="card-header")
+            h3 Options
+          div(class="card-body")
+            p
+              | Who is the best team leader for this task?
+              br
+              | (AI confidence shown as percentages)
+            table(cellpadding="10px")
+              tr
+                td(valign="top")
+                  img(src="/images/" + question.options.first.type + ".png", width="150px", onclick="clicked(\'" + question.options.first.type + "\')")
+                td(valign="top")
+                  img(src="/images/info.png" width="30px" onclick="javascript:popOver('userA');" data-toggle="popover" title=question.options.first.preferences.title data-content=question.options.first.preferences.details)
+                  h3 #{question.options.first.confidence}%
+                  ol
+                    if (typeof (question.options.first.explanations) !== 'undefined')
+                      each val in question.options.first.explanations
+                        li= val
+              tr
+                td(valign="top")
+                  img(src="/images/" + question.options.second.type + ".png", width="150px", onclick="clicked(\'" + question.options.second.type + "\')")
+                td(valign="top")
+                  img(src="/images/info.png" width="30px" onclick="javascript:popOver('userB');" data-toggle="popover" title!=question.options.second.preferences.title data-content!=question.options.second.preferences.details)
+                  h3 #{question.options.second.confidence}%
+                  ol
+                    if (typeof (question.options.second.explanations) !== 'undefined')
+                      each val in question.options.second.explanations
+                        li= val
+    div(class="row text-white")
+      div(class="col-md-6")
+        div(class="card bg-dark ")
+          <!-- TEAM MEMBERS -->
+          div(class="card-header")
+            h3 Team members
+          div(class="card-body")
+            table(cellpadding="10px")
+              tbody
+                tr
+                  td(align="center")
+                    img(id="team_member_1", src="/images/TBC.png", width="100px")
+                    br
+                    div(id="leader") Team Leader
+                  if (teamsize == 0)
+                    td(align="center") No other team members
+                  if (teamsize > 0)
+                    td(align="center")
+                      img(src="/images/" + question.team_members[0].type + ".png", width="100px")
+                      br
+                      div(id="deputy") Deputy
+                  else
+                    td(align="center")
+                      img(src="/images/blank.png", width="100px")
+                  if (teamsize > 1)
+                    td(align="center")
+                      img(src="/images/" + question.team_members[1].type + ".png", width="100px")
+                      br
+                      div Member
+                  else
+                    td(align="center")
+                      img(src="/images/blank.png", width="100px")
+                  if (teamsize > 2)
+                    td(align="center")
+                      img(src="/images/" + question.team_members[2].type + ".png", width="100px")
+                      br
+                      div Member
+                  else
+                    td(align="center")
+                      img(src="/images/blank.png", width="100px")
+                  if (teamsize > 3)
+                    td(align="center")
+                      img(src="/images/" + question.team_members[3].type + ".png", width="100px")
+                      br
+                      div Member
+                  else
+                    td(align="center")
+                      img(src="/images/blank.png", width="100px")
+      div(class="col-md-6")
+        div(class="card bg-dark ")
+          <!-- ANSWER -->
+          div(class="card-header")
+            h3 Answer
+          div(class="card-body")
+            table
+              tr
+                td(colspan="2")
+                  | Which team leader can best tackle this task?
+              tr
+                td
+                  | Team leader: &nbsp;&nbsp;&nbsp;
+                  input(type="radio", name="choice", id="choice_A", value="A", onchange="radioChange()")
+                  | &nbsp; A &nbsp;&nbsp;&nbsp;
+                  input(type="radio", name="choice", id="choice_B", value="B", onchange="radioChange()")
+                  | &nbsp; B
+                  br
+                  | Optional comment:
+                  br
+                  textarea(id="comment", name="comment", value="", rows="3", cols="20" onfocus="javascript:commentGotFocus();")
+                td(valign="bottom")
+                  button(type='button' class='btn' onclick='postAnswer(\'' + question.id + '\')') Submit choice

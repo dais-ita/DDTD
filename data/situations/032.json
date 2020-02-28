@@ -1,0 +1,35 @@
+{
+  "id": "032",
+  "task": {
+    "id": "doc-1712",
+    "diversity": "low",
+    "workload": "low",
+    "kudos": "low",
+    "urgency": "low",
+    "main_skill": "IPP P6",
+    "complex": false,
+    "format": "intconf"
+  },
+  "team_members": [
+    {
+      "position": 2,
+      "type": "IND"
+    },
+    {
+      "position": 3,
+      "type": "AC"
+    }
+  ],
+  "options": {
+    "first": {
+      "type": "AC",
+      "confidence": 93.75,
+      "explanations": ["Not complex", "Other team members match", "Format match", "Workload match"]
+    },
+    "second": {
+      "type": "IND",
+      "confidence": 6.25,
+      "explanations": ["Deputy match", "Skill match: liaison", "Diversity match", "Other team members match"]
+    }
+  }
+}

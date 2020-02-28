@@ -1,0 +1,41 @@
+{
+  "id": "004N",
+  "task": {
+    "id": "doc-4083",
+    "diversity": "high",
+    "workload": "high",
+    "kudos": "high",
+    "urgency": "high",
+    "main_skill": "BPP P1",
+    "complex": false,
+    "format": "journal"
+  },
+  "team_members": [
+    {
+      "position": 2,
+      "type": "AC"
+    },
+    {
+      "position": 3,
+      "type": "IND"
+    },
+    {
+      "position": 4,
+      "type": "AC"
+    },
+    {
+      "position": 5,
+      "type": "IND"
+    }
+  ],
+  "options": {
+    "first": {
+      "type": "AC",
+      "confidence": 87.5
+    },
+    "second": {
+      "type": "IND",
+      "confidence": 12.5
+    }
+  }
+}

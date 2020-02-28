@@ -1,0 +1,35 @@
+{
+  "id": "040",
+  "task": {
+    "id": "doc-919",
+    "diversity": "medium",
+    "workload": "low",
+    "kudos": "high",
+    "urgency": "low",
+    "main_skill": "IPP P5",
+    "complex": true,
+    "format": "extconf"
+  },
+  "team_members": [
+    {
+      "position": 2,
+      "type": "IND"
+    },
+    {
+      "position": 3,
+      "type": "AC"
+    }
+  ],
+  "options": {
+    "first": {
+      "type": "IND",
+      "confidence": 93.75,
+      "explanations": ["Deputy match", "Complex", "Diversity match", "Other team members match"]
+    },
+    "second": {
+      "type": "AC",
+      "confidence": 6.25,
+      "explanations": ["Other team members match", "Workload match"]
+    }
+  }
+}

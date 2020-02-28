@@ -1,0 +1,43 @@
+{
+  "id": "008",
+  "task": {
+    "id": "doc-1247",
+    "diversity": "medium",
+    "workload": "medium",
+    "kudos": "low",
+    "urgency": "high",
+    "main_skill": "IPP P6",
+    "complex": true,
+    "format": "journal"
+  },
+  "team_members": [
+    {
+      "position": 2,
+      "type": "AC"
+    },
+    {
+      "position": 3,
+      "type": "IND"
+    },
+    {
+      "position": 4,
+      "type": "IND"
+    },
+    {
+      "position": 5,
+      "type": "IND"
+    }
+  ],
+  "options": {
+    "first": {
+      "type": "AC",
+      "confidence": 62.5,
+      "explanations": ["Deputy match", "Other team members different"]
+    },
+    "second": {
+      "type": "IND",
+      "confidence": 37.5,
+      "explanations": ["Diversity match", "Other team members match", "Skill match: liaison"]
+    }
+  }
+}

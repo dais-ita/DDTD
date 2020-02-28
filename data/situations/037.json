@@ -1,0 +1,39 @@
+{
+  "id": "037",
+  "task": {
+    "id": "doc-2477",
+    "diversity": "low",
+    "workload": "low",
+    "kudos": "high",
+    "urgency": "medium",
+    "main_skill": "BPP P1",
+    "complex": false,
+    "format": "intconf"
+  },
+  "team_members": [
+    {
+      "position": 2,
+      "type": "AC"
+    },
+    {
+      "position": 3,
+      "type": "IND"
+    },
+    {
+      "position": 4,
+      "type": "AC"
+    }
+  ],
+  "options": {
+    "first": {
+      "type": "AC",
+      "confidence": 75.0,
+      "explanations": ["Deputy match", "Not complex", "Skill match: accounting", "Workload match"]
+    },
+    "second": {
+      "type": "IND",
+      "confidence": 25.0,
+      "explanations": ["Diversity match", "Other team members match", "Other team members different"]
+    }
+  }
+}

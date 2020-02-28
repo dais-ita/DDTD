@@ -1,0 +1,43 @@
+{
+  "id": "018",
+  "task": {
+    "id": "doc-1103",
+    "diversity": "medium",
+    "workload": "medium",
+    "kudos": "high",
+    "urgency": "low",
+    "main_skill": "IPP P2",
+    "complex": false,
+    "format": "extconf"
+  },
+  "team_members": [
+    {
+      "position": 2,
+      "type": "AC"
+    },
+    {
+      "position": 3,
+      "type": "IND"
+    },
+    {
+      "position": 4,
+      "type": "IND"
+    },
+    {
+      "position": 5,
+      "type": "IND"
+    }
+  ],
+  "options": {
+    "first": {
+      "type": "AC",
+      "confidence": 68.75,
+      "explanations": ["Deputy match", "Not complex", "Other team members different"]
+    },
+    "second": {
+      "type": "IND",
+      "confidence": 31.25,
+      "explanations": ["Diversity match", "Other team members match", "Format match"]
+    }
+  }
+}

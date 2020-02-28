@@ -1,0 +1,39 @@
+{
+  "id": "010",
+  "task": {
+    "id": "doc-4284",
+    "diversity": "low",
+    "workload": "low",
+    "kudos": "medium",
+    "urgency": "high",
+    "main_skill": "BPP P4",
+    "complex": false,
+    "format": "journal"
+  },
+  "team_members": [
+    {
+      "position": 2,
+      "type": "AC"
+    },
+    {
+      "position": 3,
+      "type": "AC"
+    },
+    {
+      "position": 4,
+      "type": "AC"
+    }
+  ],
+  "options": {
+    "first": {
+      "type": "AC",
+      "confidence": 100.0,
+      "explanations": ["Deputy match", "Not complex", "Other team members match", "Workload match"]
+    },
+    "second": {
+      "type": "IND",
+      "confidence": 0.0,
+      "explanations": ["Diversity match", "Other team members different"]
+    }
+  }
+}

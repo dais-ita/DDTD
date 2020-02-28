@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  div(class="container-fluid")
+    div(class="row")
+      div(class="col-md-12")
+        table(border=1)
+          thead
+            tr
+              each hdr in result[0]
+                td #{hdr}
+          tbody
+            each row, irow in result
+              if (irow > 0)
+                tr
+                  each cell, icell in row
+                    if (icell == 0)
+                      - var dt = new Date(cell)
+                      - var ds = dt.getUTCFullYear() +"/"+ (dt.getUTCMonth()+1) +"/"+ dt.getUTCDate() + " " + dt.getUTCHours() + ":" + dt.getUTCMinutes() + ":" + dt.getUTCSeconds();
+                      td #{ds}
+                    else if (icell < 3)
+                      td #{cell}
+                    else
+                      td
+                        each subcell, isubcell in cell
+                          if (isubcell == 0)
+                            | #{subcell}
+                          if (isubcell == 1)
+                            | #{subcell}
+                          if (isubcell == 2)
+                            if (subcell)
+                              - var time = '(' + subcell/1000 + ')'
+                              | #{time}
+                            else
+                              | #{subcell}
+                          br

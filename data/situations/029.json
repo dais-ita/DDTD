@@ -1,0 +1,43 @@
+{
+  "id": "029",
+  "task": {
+    "id": "doc-4084",
+    "diversity": "low",
+    "workload": "medium",
+    "kudos": "medium",
+    "urgency": "high",
+    "main_skill": "BPP P2",
+    "complex": false,
+    "format": "journal"
+  },
+  "team_members": [
+    {
+      "position": 2,
+      "type": "AC"
+    },
+    {
+      "position": 3,
+      "type": "AC"
+    },
+    {
+      "position": 4,
+      "type": "AC"
+    },
+    {
+      "position": 5,
+      "type": "IND"
+    }
+  ],
+  "options": {
+    "first": {
+      "type": "AC",
+      "confidence": 68.75,
+      "explanations": ["Deputy match", "Not complex", "Other team members match", "Workload match"]
+    },
+    "second": {
+      "type": "IND",
+      "confidence": 31.25,
+      "explanations": ["Diversity match", "Skill match: negotiating"]
+    }
+  }
+}
